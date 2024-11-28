@@ -1,0 +1,120 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #000;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+/* Image Section */
+.image-section {
+    margin: 30px 0;
+}
+
+.image-section img {
+    max-width: 80%;
+    border: 5px solid #ff007a;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff00e4;
+}
+.text-section {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Header Styling (h1) */
+h1 {
+    font-size: 5rem; /* Larger font size for more impact */
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 20px #ff007a, 0 0 40px #00e4ff, 0 0 60px #ff00e4;
+    letter-spacing: 5px; /* Adds more style to the header */
+    margin: 20px 0;
+}
+
+/* Main Section Paragraph Styling (p) */
+.text-section p {
+    font-size: 1.8rem; /* Slightly larger font size */
+    line-height: 2;
+    color: #fff;
+    text-shadow: 0 0 10px #00e4ff, 0 0 20px #ff00e4, 0 0 30px #ff007a;
+    animation: rainbow-glow 4s infinite alternate, neon-text-pulse 6s infinite;
+    padding: 15px 25px;
+    background: linear-gradient(45deg, rgba(255, 0, 122, 0.2), rgba(0, 228, 255, 0.2));
+    border: 4px solid rgba(255, 0, 122, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ff00e4, 0 0 25px #00e4ff;
+}
+
+/* Animations for h1 */
+@keyframes color-pulse {
+    0% {
+        background: linear-gradient(90deg, #ff007a, #00e4ff, #00ff99, #ff00e4);
+    }
+    50% {
+        background: linear-gradient(90deg, #00ff99, #ff00e4, #ff007a, #00e4ff);
+    }
+    100% {
+        background: linear-gradient(90deg, #ff007a, #00e4ff, #00ff99, #ff00e4);
+    }
+}
+
+@keyframes neon-blur {
+    0%, 100% {
+        text-shadow: 0 0 20px #ff007a, 0 0 40px #00e4ff, 0 0 60px #ff00e4;
+    }
+    50% {
+        text-shadow: 0 0 40px #ff00e4, 0 0 60px #00e4ff, 0 0 80px #ff007a;
+    }
+}
+
+/* Animations for p */
+@keyframes rainbow-glow {
+    0% {
+        text-shadow: 0 0 10px #ff007a, 0 0 20px #00e4ff, 0 0 30px #ff00e4;
+    }
+    50% {
+        text-shadow: 0 0 30px #00e4ff, 0 0 40px #ff00e4, 0 0 50px #00ff99;
+    }
+    100% {
+        text-shadow: 0 0 10px #00e4ff, 0 0 20px #ff00e4, 0 0 30px #ff007a;
+    }
+}
+
+@keyframes neon-text-pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+}
